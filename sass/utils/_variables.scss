@@ -1,0 +1,17 @@
+$color-primary : #9356DC;
+$color-secondary : #FF79DA;
+$color-tertiary : #99E2D0;
+$font-size-text : 1.2rem;
+$font-size-titre : 1.88rem;
+
+@mixin police-text {
+    font-family: Roboto-Regular;
+}
+
+@mixin boutton {
+    color: white;
+    border-radius: 2rem;
+    padding: .80rem 1rem;
+    border: none;
+    background : linear-gradient(350deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+}
