@@ -365,7 +365,7 @@ template {
 .localisation {
   display: flex;
   justify-content: center;
-  background-color: #e6e6e6;
+  background-color: #eeeeee;
   box-shadow: inset 0px 3px 8px -5px rgba(0, 0, 0, 0.53);
 }
 .localisation p {
@@ -387,9 +387,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
   padding-bottom: 4rem;
   font-family: Roboto-Regular;
+  background-color: #f6f6f6;
 }
 nav h1 {
   display: block;
@@ -410,14 +410,154 @@ nav p {
 }
 
 /*FONCTIONNEMENT*/
+.fonctionnement h2 {
+  padding: 2rem 0rem 0.5rem 2rem;
+}
 .fonctionnement--card {
+  position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 85%;
+  margin-left: 8%;
+  padding: 8px;
   font-size: 1.3rem;
   font-family: Roboto-Regular;
+  box-shadow: 2px 10px 15px -5px rgba(87, 87, 87, 0.41);
+  background-color: #f6f6f6;
+  border-radius: 1.8rem;
 }
-.fonctionnement--card img {
-  width: 1rem;
+.fonctionnement--card span {
+  background-color: #9356DC;
+  color: #FFF;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 4px;
+  font-size: 1rem;
+}
+.fonctionnement--logo-phone {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 0.9rem;
+}
+.fonctionnement--logo-graph {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 1.2rem;
+}
+.fonctionnement--logo-market {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  width: 1.2rem;
+}
+
+/*RESTAURANTS*/
+.section-deux {
+  background-color: #f6f6f6;
+}
+.section-deux h2 {
+  padding: 2rem 0rem 0.5rem 2rem;
+}
+
+.section-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.restaurants--block {
+  box-shadow: 2px 10px 15px -5px rgba(87, 87, 87, 0.41);
+  width: 85%;
+  border-radius: 1rem;
+}
+.restaurants--block--span {
+  position: relative;
+}
+.restaurants--block span {
+  font-family: Roboto-Medium;
+  background-color: #99E2D0;
+  border-radius: 0.1rem;
+  padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+  color: #278870;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 15;
+  right: 15;
+}
+.restaurants--block h3 {
+  margin: 1rem 0rem 0.2rem 0.8rem;
+}
+.restaurants--block p {
+  font-family: Roboto-Thin;
+  margin: 0rem 0rem 0.8rem 0.8rem;
+}
+.restaurants--block a {
+  color: black;
+  text-decoration: none;
+}
+.restaurants--block--image {
+  border-radius: 1rem 1rem 0rem 0rem;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.restaurants--block--texte {
+  display: flex;
+}
+.restaurants--block--texte div {
+  width: 50%;
+}
+.restaurants--block--logo {
+  position: relative;
+}
+.restaurants--block--svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  width: 1.5rem;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #363636;
+  color: white;
+  font-family: Roboto-Thin;
+  padding-bottom: 1.5rem;
+}
+footer svg {
+  width: 7rem;
+  margin: 1rem 0rem 1rem 1.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  margin: 0rem 0rem 0rem 1.5rem;
+  padding: 0;
+}
+footer ul img {
+  width: 0.8rem;
+  margin-right: 1rem;
+}
+footer ul li {
+  padding-bottom: 0.5rem;
 }
 
 nav input {
@@ -426,11 +566,15 @@ nav input {
   padding: 1rem 1.2rem;
   border: none;
   background: linear-gradient(350deg, #9356dc 10%, #ff79da 100%);
-  box-shadow: 2px 10px 15px -5px rgba(20, 20, 20, 0.41);
+  box-shadow: 2px 10px 15px -5px rgba(87, 87, 87, 0.41);
 }
 
 h2 {
   font-size: 1.7rem;
+  font-family: Roboto-Medium;
+}
+
+h3 {
   font-family: Roboto-Medium;
 }
 

@@ -3,7 +3,7 @@
 .localisation {
     display: flex;
     justify-content: center;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(238, 238, 238);
     box-shadow: inset 0px 3px 8px -5px rgba(0,0,0,0.53);  
     p {
         font-size: $font-size-text;
@@ -26,9 +26,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(240, 240, 240);
     padding-bottom: 4rem;
     @include police-text;
+    @include background-grey;
      h1 {
          display: block;
          width: 55%;
@@ -52,13 +52,86 @@ nav {
 /*FONCTIONNEMENT*/
 
 .fonctionnement {
+    h2 {
+        @include padding-titre;
+    }
     &--card {
+        position: relative;
         display: flex;
         justify-content: center;
+        margin-bottom: 1.5rem;
+        width: 85%;
+        margin-left: 8%;
+        padding: 8px;
         font-size: $font-size-text;
         @include police-text;
+        @include box-shadow-main;
+        @include background-grey;
+        border-radius: 1.8rem;
+        span {
+            @include fonctionnement-span;
+        }   
+    }
+    &--logo-phone {
+            @include fonctionnement-svg;
+            width: 0.90rem;
+        }
+    &--logo-graph {
+        @include fonctionnement-svg;
+        width: 1.2rem;
+    }   
+    &--logo-market {
+        @include fonctionnement-svg;
+        width: 1.2rem;
+    } 
+}
+
+/*RESTAURANTS*/
+
+.section-deux {
+    @include background-grey;
+    h2 {
+        @include padding-titre;
+    }
+}
+
+.section-restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.restaurants--block {
+    @include card-restaurants-une;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    @include police-thin;
+    padding-bottom: 1.5rem;
+    svg {
+        width: 7rem;
+        margin: 1rem 0rem 1rem 1.5rem;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    ul {
+        list-style: none;
+        margin: 0rem 0rem 0rem 1.5rem;
+        padding : 0;
         img {
-            width: 1rem;
+            width: 0.8rem;
+            margin-right: 1rem;
+        }
+        li {
+            padding-bottom: 0.5rem;
         }
     }
 }

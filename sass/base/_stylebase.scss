@@ -2,3 +2,7 @@ h2 {
     font-size: $font-size-titre;
     @include police-medium;
 }
+
+h3 {
+    @include police-medium
+}
