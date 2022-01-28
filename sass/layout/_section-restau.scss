@@ -1,21 +1,79 @@
 .restaurant-main {
+    margin-bottom: -4.5rem;
     &--photo {
-        z-index: 1;
+       z-index: 1;
         img {
             width: 100%;
         }
 }
     &--carte { 
-        border-radius: 2rem 2rem 0rem 0rem;
+        display: grid;
+        border-radius: 2.5rem 2.5rem 0rem 0rem;
         @include background-grey;
-        margin-top: -60px;
+        transform: translate(0%, -6%);
         z-index: 2;
+        padding: 1rem 1rem 0rem 1rem;
     }
     &--heart {
         width: 2rem;
     }
+    &--titre {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          transform: translate(-100%,0%);
+        }
+    }
 
+}
 
+.font-restau {
+    font-family: Shrikhand;
+    font-size: 2.2rem;
+}
+
+.card {
+    h3 {
+        border-bottom: 3px solid $color-tertiary;
+        width: 10%;
+    }
+    h4 {
+        @include police-medium;
+        margin: 0px;
+    }
+    p {
+        margin: 5px 0px 0px 0px ;
+        @include police-thin
+    }
+    div {
+        position: relative;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0rem;
+        background-color: white;
+        @include box-shadow-main;
+        border-radius: 1rem;
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        transform: translate(-50%,15%);
+        @include police-medium
+    }
+}
+
+.command-boutton {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    .boutton {
+        padding : 1rem 3rem 1rem 3rem;
+    }
 }
 
 
