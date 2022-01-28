@@ -1,0 +1,26 @@
+footer {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    @include police-thin;
+    padding-bottom: 1.5rem;
+    svg {
+        width: 7rem;
+        margin: 1rem 0rem 1rem 1.5rem;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    ul {
+        list-style: none;
+        margin: 0rem 0rem 0rem 1.5rem;
+        padding : 0;
+        img {
+            width: 0.8rem;
+            margin-right: 1rem;
+        }
+        li {
+            padding-bottom: 0.5rem;
+        }
+    }
+}

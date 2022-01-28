@@ -1,4 +1,5 @@
-nav input {
+.boutton {
     @include boutton;
-    @include box-shadow-main
+    @include box-shadow-main;
+    @include police-text
 }

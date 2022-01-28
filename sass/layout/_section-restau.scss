@@ -1,0 +1,23 @@
+.restaurant-main {
+    &--photo {
+        z-index: 1;
+        img {
+            width: 100%;
+        }
+}
+    &--carte { 
+        border-radius: 2rem 2rem 0rem 0rem;
+        @include background-grey;
+        margin-top: -60px;
+        z-index: 2;
+    }
+    &--heart {
+        width: 2rem;
+    }
+
+
+}
+
+
+
+ 

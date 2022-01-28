@@ -360,6 +360,20 @@ template {
   width: 220px;
   height: auto;
 }
+.logo-header--restaurants {
+  position: relative;
+}
+
+.placement-fleche {
+  position: relative;
+}
+
+.fleche-retour {
+  width: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(100%, -50%);
+}
 
 /*LOCALISATION*/
 .localisation {
@@ -560,13 +574,14 @@ footer ul li {
   padding-bottom: 0.5rem;
 }
 
-nav input {
+.boutton {
   color: white;
   border-radius: 2rem;
   padding: 1rem 1.2rem;
   border: none;
   background: linear-gradient(350deg, #9356dc 10%, #ff79da 100%);
   box-shadow: 2px 10px 15px -5px rgba(87, 87, 87, 0.41);
+  font-family: Roboto-Regular;
 }
 
 h2 {
@@ -576,6 +591,22 @@ h2 {
 
 h3 {
   font-family: Roboto-Medium;
+}
+
+.restaurant-main--photo {
+  z-index: 1;
+}
+.restaurant-main--photo img {
+  width: 100%;
+}
+.restaurant-main--carte {
+  border-radius: 2rem 2rem 0rem 0rem;
+  background-color: #f6f6f6;
+  margin-top: -60px;
+  z-index: 2;
+}
+.restaurant-main--heart {
+  width: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

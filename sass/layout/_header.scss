@@ -7,4 +7,18 @@
         width: 220px;
         height: auto;        
     }
+    &--restaurants {
+        position: relative;
+    }
+}
+
+.placement-fleche {
+    position: relative;
+}
+
+.fleche-retour {
+    width: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    transform: translate(100%, -50%);
 }
