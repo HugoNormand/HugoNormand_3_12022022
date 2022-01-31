@@ -1,114 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style.css">
-    <title>ohmyfood</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>La palette du goût</title>
 </head>
 <body>
-
+        
     <!--HEADER-->
 
-    <header>
+    <header class="logo-header--restaurants">  
+        <a href="./index.html"><img src="./ressources/images/arrow-left-solid.svg" alt="fleche_retour_acceuil" class="fleche-retour"></a>
         <div class="logo-header"><img src="./ressources/images/logo/ohmyfood.png" alt="logo_ohmyfood"></div>
-        <div class="localisation">
-            <img src="./ressources/images/map-marker-alt-solid.svg" alt="">
-            <p>Paris, Belleville</p>
-        </div>
-        <nav>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <input type="button" value="Explorer nos restaurants" class="boutton">
-        </nav>
     </header>
 
-    <!--SECTION 1-->
+    <!--SECTION-->
 
-    <section class="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <div class="fonctionnement--card"><span>1</span><img src="./ressources/images/mobile-alt-solid.svg" alt="logo_téléphone" class="fonctionnement--logo-phone"><p>Choisissez un restaurant</p></div>
-        <div class="fonctionnement--card"><span>2</span><img src="./ressources/images/list-ul-solid.svg" alt="logo_liste" class="fonctionnement--logo-graph"><p>Composez votre menu</p></div>
-        <div class="fonctionnement--card"><span>3</span><img src="./ressources/images/store-solid.svg" alt="logo_restaurant" class="fonctionnement--logo-market"><p>Dégustez au restaurant</p></div>
-    </section>
-
-    <!--SECTION 2-->
-
-    <section class="section-deux"> 
-
-        <h2>Restaurants</h2>
-        
-    <div class="section-restaurants">
-        <div class="restaurants--block">  
-            <a href="restaurants-1.html">
-            <div class="restaurants--block--span">
-                <img src="./ressources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="restaurants--block--image">
-                <span>Nouveau</span>
-            </div>
-            <div class="restaurants--block--texte"> 
-                <div>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>
-                <div class="restaurants--block--logo">
-                    <img src="./ressources/images/heart-regular.svg" alt="logo_coeur" class="restaurants--block--svg">
-                </div>
-            </div> 
-            </a>
+    <section class="restaurant-main">
+        <div class="restaurant-main--photo">
+            <img src="./ressources/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo la note enchantée">
         </div>
-
-        <div class="restaurants--block">
-            <a href="">
-            <div class="restaurants--block--span">
-                <img src="./ressources/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" class="restaurants--block--image">
-                <span>Nouveau</span>
-            </div>
-            <div class="restaurants--block--texte">
+        <div class="restaurant-main--carte">
+            <div class="restaurant-main--titre">
+                <h1 class="font-restau">La note enchantée</h1>
                 <div>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+                    <img src="./ressources/images/heart-regular.svg" alt="logo_coeur" class="restaurant-main--heart">
                 </div>
-                <div class="restaurants--block--logo">
-                    <img src="./ressources/images/heart-regular.svg" alt="logo_coeur" class="restaurants--block--svg">
-                </div>       
             </div>
-            </a>
-        </div>
+            
+            <!--ENTRÉES-->
 
-        <div class="restaurants--block">
-            <a href="">
-            <div class="restaurants--block--span">
-                <img src="./ressources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="restaurants--block--image">
-            </div>
-            <div class="restaurants--block--texte">
+            <div class="card">
+                <h3>ENTRÉES</h3>
+                <div class="card--main">
+                    <div class="card--main--txt">
+                    <h4>Ravioles de foie gras</h4>
+                    <p>Accompagnés de leur crème à la truffe</p>
+                    </div>
+                    
+                    <div class="card--main--animation">
+                        <div class="card--main--animation--txt">25€</div>
+                        <div class ="card--main--animation--logo">
+                            <img src="./ressources/images/check-circle-solid.svg" alt="logo animation check">
+                        </div>
+                    </div>             
+                </div>     
+           
                 <div>
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
+                    <h4>Caviar osciètre </h4>
+                    <p>Sur blini à la farine de blé noir<span>35€</span></p>
+                    
                 </div>
-                <div class="restaurants--block--logo">
-                    <img src="./ressources/images/heart-regular.svg" alt="logo_coeur" class="restaurants--block--svg">
-                </div>
-            </div>
-            </a>
-        </div>
 
-        <div class="restaurants--block">
-            <a href="">
-            <div class="restaurants--block--span">
-                <img src="./ressources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="restaurants--block--image">
-            </div>
-            <div class="restaurants--block--texte">
                 <div>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                    <h4>Oeuf au plat</h4>
+                    <p>Assaisonné à la truffe sur lit de caviar<span>20€</span></p>    
                 </div>
-                <div class="restaurants--block--logo">
-                    <img src="./ressources/images/heart-regular.svg" alt="logo_coeur" class="restaurants--block--svg">
+
+                <div>
+                    <h4>Foie gras de canard cuit entier</h4>
+                    <p>Confiture de figue et pain toasté<span>35€</span></p>    
                 </div>
             </div>
-            </a>
+            
+            <!--PLATS-->
+
+            <div class="card">
+                <h3>PLATS</h3>
+                <div>
+                    <h4>Noix de coquilles Saint-Jacques</h4>
+                    <p>Sur lit de purée de céleri-rave<span>40€</span></p>
+                    
+                </div>
+
+                <div>
+                    <h4>Langoustine poêlée</h4>
+                    <p>Purée de patate douce<span>35€</span></p>
+                    
+                </div>
+
+                <div>
+                    <h4>Mijoté de queue de boeuf</h4>
+                    <p>Et riz sauvage aux zestes de citron<span>44€</span></p>
+                    
+                </div>
+            </div>
+
+            <!--DÉSSERTS-->
+            
+            <div class="card">
+                <h3>DÉSSERTS</h3>
+                <div>
+                    <h4>Macaron noisette et chocolat</h4>
+                    <p>Glace au caramel brun et sel de Guérande<span>18€<span></p>
+                    
+                </div>
+
+                <div>
+                    <h4>Baba au rhum revisité</h4>
+                    <p>Avec son coulis de citron<span>22€</span></p>
+                    
+                </div>
+
+                <div>
+                    <h4>Tarte au citron meringuée</h4>
+                    <p>Déstructurée<span>23€</span></p>
+                    
+                </div>
+            </div>
+
+            <div class="command-boutton">
+                <input type="button" value="Commander" class="boutton">
+            </div>
         </div>
-    </div> 
     </section>
 
     <!--FOOTER-->
@@ -131,5 +137,6 @@
             <li><a href="mailto:anadressmail@gmail.com">Contact</a></li>
         </ul>
     </footer>
+
 </body>
 </html>
