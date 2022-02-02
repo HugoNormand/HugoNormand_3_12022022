@@ -1,0 +1,11 @@
+.color-svg {
+    fill: url(#Gradient);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.color-svg:hover{                  
+    opacity: 1;
+    transition: opacity 0.5s;    
+}
+

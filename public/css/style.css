@@ -596,6 +596,9 @@ h3 {
 .restaurant-main {
   margin-bottom: -4.5rem;
 }
+.restaurant-main h1 {
+  font-size: 1.8rem;
+}
 .restaurant-main--photo {
   z-index: 1;
 }
@@ -614,13 +617,13 @@ h3 {
   width: 2rem;
 }
 .restaurant-main--titre {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 95%;
 }
 .restaurant-main--titre img {
-  transform: translate(-100%, 0%);
+  width: 1.8rem;
 }
 
 .font-restau {
@@ -640,9 +643,11 @@ h3 {
   margin: 0rem 0rem 0.5rem 1rem;
   font-family: Roboto-Thin;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card--main {
-  animation: slideDown 1.5s;
+  animation: slideDown 1.3s;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -655,25 +660,29 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .card--main--animation {
   position: relative;
   display: flex;
   align-items: flex-end;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .card--main--animation--txt {
   font-family: Roboto-Medium;
-  margin: 0rem -2rem 0.5rem 0rem;
-  width: 100%;
+  margin: 0rem -2rem 0.5rem 1rem;
 }
 .card--main--animation--logo {
   transform: scaleX(0);
+  transition: transform 0.4s ease-in-out, margin-left 0.5s;
+  margin-left: 0rem;
+  transform-origin: 100%;
   background-color: #99E2D0;
   border-radius: 0rem 1rem 1rem 0rem;
 }
 .card--main--animation--logo img {
+  transform: rotate(0deg);
+  transition: transform 0.5s;
   width: 1.6rem;
   margin: 1.2rem;
 }
@@ -685,7 +694,7 @@ h3 {
   transform: scaleX(1);
   transform-origin: 100%;
   transition: transform 0.4s ease-in-out, margin-left 0.4s;
-  margin-left: 2.5rem;
+  margin-left: 3rem;
 }
 .card--main:hover .card--main--animation--logo img {
   transform: rotate(360deg);
@@ -710,6 +719,17 @@ h3 {
 }
 .command-boutton .boutton {
   padding: 1rem 3rem 1rem 3rem;
+}
+
+.color-svg {
+  fill: url(#Gradient);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.color-svg:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
