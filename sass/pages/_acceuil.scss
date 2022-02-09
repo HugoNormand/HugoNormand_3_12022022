@@ -174,7 +174,7 @@ nav {
         border-radius: 1.8rem;
         span {
             @include fonctionnement-span;
-        }   
+        }  
     }
     &--logo-phone {
             @include fonctionnement-svg;
@@ -188,6 +188,19 @@ nav {
         @include fonctionnement-svg;
         width: 1.2rem;
     } 
+}
+
+.disabled {
+    display: none;
+}
+
+.fonctionnement--card:hover {    
+        transition: box-shadow 0.3s;
+        background-color: rgba(147, 86, 220,0.1);
+        box-shadow: 2px 20px 30px -8px rgba(87, 87, 87, 0.41);
+        .disabled {
+            display: inline;
+        }
 }
 
 /*RESTAURANTS*/

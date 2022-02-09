@@ -403,7 +403,7 @@ body {
   height: 200px;
   border-radius: 200px;
   border: 6px solid transparent;
-  border-top-color: #9356DC;
+  border-top-color: #9356dc;
   border-bottom-color: #FF79DA;
   animation: spin 2s infinite;
 }
@@ -530,7 +530,7 @@ nav p {
   border-radius: 1.8rem;
 }
 .fonctionnement--card span {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: #FFF;
   border-radius: 50%;
   height: 25px;
@@ -563,6 +563,19 @@ nav p {
   top: 50%;
   transform: translate(0%, -50%);
   width: 1.2rem;
+}
+
+.disabled {
+  display: none;
+}
+
+.fonctionnement--card:hover {
+  transition: box-shadow 0.3s;
+  background-color: rgba(147, 86, 220, 0.1);
+  box-shadow: 2px 20px 30px -8px rgba(87, 87, 87, 0.41);
+}
+.fonctionnement--card:hover .disabled {
+  display: inline;
 }
 
 /*RESTAURANTS*/
@@ -686,7 +699,7 @@ h2 {
 }
 
 h3 {
-  font-family: Roboto-Thin;
+  font-family: Roboto-Medium;
 }
 
 .restaurant-main {
@@ -696,10 +709,15 @@ h3 {
   font-size: 1.8rem;
 }
 .restaurant-main--photo {
+  height: 400px;
   z-index: 1;
 }
 .restaurant-main--photo img {
+  object-fit: cover;
+  object-position: 0px -120px;
+  margin-bottom: 300px;
   width: 100%;
+  height: 100%;
 }
 .restaurant-main--carte {
   display: grid;
@@ -858,6 +876,10 @@ h3 {
 }
 .command-boutton .boutton {
   padding: 1rem 3rem 1rem 3rem;
+}
+
+.ohmy--footer {
+  margin-bottom: 8px;
 }
 
 .color-svg {
