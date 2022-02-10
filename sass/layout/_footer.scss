@@ -23,4 +23,18 @@ footer {
             padding-bottom: 0.5rem;
         }
     }
+    @include tablette-only {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+    }  
+    @include desktop-only {
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+    }
 }

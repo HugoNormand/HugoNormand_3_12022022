@@ -4,6 +4,23 @@ $color-tertiary : #99E2D0;
 $color-boutton : linear-gradient(350deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
 $font-size-text : 1.3rem;
 $font-size-titre : 1.7rem;
+$breakpoints : (
+    tablette: 630px,
+    tablette-max: 930px,
+    desktop : 931px
+);
+
+@mixin tablette-only {
+    @media (min-width: map-get($breakpoints,tablette)) and (max-width: map-get($breakpoints,tablette-max)) {
+        @content
+    }
+};
+
+@mixin desktop-only {
+    @media (min-width: map-get($breakpoints,desktop)) {
+        @content
+    }
+};
 
 @mixin police-text {
     font-family: Roboto-Regular;
@@ -92,6 +109,9 @@ $font-size-titre : 1.7rem;
     }
     &--texte {
         display: flex;
+        h3 {
+            font-family: Roboto-Medium;
+        }
         div {
             width: 50%;
         }

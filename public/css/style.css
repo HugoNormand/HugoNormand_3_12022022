@@ -529,6 +529,11 @@ nav p {
   background-color: #f6f6f6;
   border-radius: 1.8rem;
 }
+@media (min-width: 1100px) {
+  .fonctionnement--card {
+    margin: 1rem;
+  }
+}
 .fonctionnement--card span {
   background-color: #9356dc;
   color: #FFF;
@@ -593,6 +598,20 @@ nav p {
   gap: 1.5rem;
   padding-bottom: 3rem;
 }
+@media (min-width: 630px) and (max-width: 930px) {
+  .section-restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+@media (min-width: 931px) {
+  .section-restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
 
 .restaurants--block {
   box-shadow: 2px 10px 15px -8px rgba(87, 87, 87, 0.41);
@@ -633,6 +652,9 @@ nav p {
 .restaurants--block--texte {
   display: flex;
 }
+.restaurants--block--texte h3 {
+  font-family: Roboto-Medium;
+}
 .restaurants--block--texte div {
   width: 50%;
 }
@@ -646,33 +668,21 @@ nav p {
   transform: translate(-100%, -50%);
   width: 1.5rem;
 }
+@media (min-width: 630px) and (max-width: 930px) {
+  .restaurants--block {
+    width: 100%;
+  }
+}
+@media (min-width: 931px) {
+  .restaurants--block {
+    width: 100%;
+  }
+}
 
-/*FOOTER*/
-footer {
-  background-color: #363636;
-  color: white;
-  font-family: Roboto-Thin;
-  padding-bottom: 1.5rem;
-}
-footer svg {
-  width: 7rem;
-  margin: 1rem 0rem 1rem 1.5rem;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-footer ul {
-  list-style: none;
-  margin: 0rem 0rem 0rem 1.5rem;
-  padding: 0;
-}
-footer ul img {
-  width: 0.8rem;
-  margin-right: 1rem;
-}
-footer ul li {
-  padding-bottom: 0.5rem;
+@media (min-width: 1100px) {
+  .media--fonction {
+    display: flex;
+  }
 }
 
 .boutton {
@@ -699,7 +709,7 @@ h2 {
 }
 
 h3 {
-  font-family: Roboto-Medium;
+  font-family: Roboto-Thin;
 }
 
 .restaurant-main {
@@ -714,8 +724,6 @@ h3 {
 }
 .restaurant-main--photo img {
   object-fit: cover;
-  object-position: 0px -120px;
-  margin-bottom: 300px;
   width: 100%;
   height: 100%;
 }
@@ -726,6 +734,33 @@ h3 {
   transform: translate(0%, -6%);
   z-index: 2;
   padding: 1rem 1rem 0rem 1rem;
+  margin-bottom: -5rem;
+}
+@media (min-width: 630px) and (max-width: 930px) {
+  .restaurant-main--carte {
+    width: 85%;
+    align-self: center;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    margin-bottom: 5rem;
+    padding: 2rem 2rem 0rem 2rem;
+    box-shadow: 2px 10px 15px -8px rgba(87, 87, 87, 0.41);
+  }
+}
+@media (min-width: 931px) {
+  .restaurant-main--carte {
+    width: 85%;
+    align-self: center;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+    margin-bottom: 5rem;
+    padding: 2rem 2rem 0rem 2rem;
+    box-shadow: 2px 10px 15px -8px rgba(87, 87, 87, 0.41);
+  }
+  .restaurant-main--carte .all--food {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
 .restaurant-main--logo {
   position: relative;
@@ -745,6 +780,18 @@ h3 {
 }
 .restaurant-main--titre img {
   width: 1.8rem;
+}
+@media (min-width: 630px) and (max-width: 930px) {
+  .restaurant-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 931px) {
+  .restaurant-main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .font-restau {
@@ -879,7 +926,7 @@ h3 {
 }
 
 .ohmy--footer {
-  margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 .color-svg {
@@ -892,6 +939,47 @@ h3 {
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.5s;
+}
+
+footer {
+  background-color: #363636;
+  color: white;
+  font-family: Roboto-Thin;
+  padding-bottom: 1.5rem;
+}
+footer svg {
+  width: 7rem;
+  margin: 1rem 0rem 1rem 1.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  margin: 0rem 0rem 0rem 1.5rem;
+  padding: 0;
+}
+footer ul img {
+  width: 0.8rem;
+  margin-right: 1rem;
+}
+footer ul li {
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 630px) and (max-width: 930px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 931px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
