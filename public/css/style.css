@@ -799,6 +799,9 @@ h3 {
   font-size: 2.2rem;
 }
 
+.card {
+  margin-bottom: 3rem;
+}
 .card h3 {
   border-bottom: 3px solid #99E2D0;
   width: 10%;
@@ -869,7 +872,7 @@ h3 {
   cursor: pointer;
 }
 .card--main:hover .card--main--txt {
-  width: 70%;
+  width: 65%;
   transition: width 0.3s;
 }
 .card--main:hover .card--main--animation--txt {
@@ -916,7 +919,7 @@ h3 {
   }
 }
 .command-boutton {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
