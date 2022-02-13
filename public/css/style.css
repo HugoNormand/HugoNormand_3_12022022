@@ -334,22 +334,6 @@ template {
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Shrikhand;
-  src: url(/ressources/polices/Shrikhand/Shrikhand-Regular.ttf);
-}
-@font-face {
-  font-family: Roboto-Thin;
-  src: url(/ressources/polices/Roboto/Roboto-Thin.ttf);
-}
-@font-face {
-  font-family: Roboto-Regular;
-  src: url(/ressources/polices/Roboto/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: Roboto-Medium;
-  src: url(/ressources/polices/Roboto/Roboto-Medium.ttf);
-}
 .logo-header {
   display: flex;
   justify-content: center;
@@ -475,7 +459,8 @@ body {
   padding-right: 1.8rem;
   display: flex;
   justify-content: center;
-  font-family: Roboto-Regular;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 .localisation img {
   position: relative;
@@ -490,7 +475,8 @@ nav {
   flex-direction: column;
   align-items: center;
   padding-bottom: 4rem;
-  font-family: Roboto-Regular;
+  font-family: "Roboto";
+  font-weight: 400;
   background-color: #f6f6f6;
 }
 nav h1 {
@@ -500,7 +486,8 @@ nav h1 {
   font-size: 1.7rem;
   margin-bottom: 0px;
   margin-top: 40px;
-  font-family: Roboto-Medium;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 nav p {
   display: block;
@@ -508,7 +495,8 @@ nav p {
   width: 80%;
   text-align: center;
   margin-bottom: 30px;
-  font-family: Roboto-Thin;
+  font-family: "Roboto";
+  font-weight: 100;
 }
 
 /*FONCTIONNEMENT*/
@@ -524,7 +512,8 @@ nav p {
   margin-left: 8%;
   padding: 8px;
   font-size: 1.3rem;
-  font-family: Roboto-Regular;
+  font-family: "Roboto";
+  font-weight: 400;
   box-shadow: 2px 10px 15px -8px rgba(87, 87, 87, 0.41);
   background-color: #f6f6f6;
   border-radius: 1.8rem;
@@ -622,21 +611,23 @@ nav p {
   position: relative;
 }
 .restaurants--block span {
-  font-family: Roboto-Medium;
+  font-family: "Roboto";
+  font-weight: 500;
   background-color: #99E2D0;
   border-radius: 0.1rem;
   padding: 0.4rem 0.7rem 0.4rem 0.7rem;
   color: #278870;
   font-size: 0.8rem;
   position: absolute;
-  top: 15;
-  right: 15;
+  top: 15px;
+  right: 15px;
 }
 .restaurants--block h3 {
   margin: 1rem 0rem 0.2rem 0.8rem;
 }
 .restaurants--block p {
-  font-family: Roboto-Thin;
+  font-family: "Roboto";
+  font-weight: 100;
   margin: 0rem 0rem 0.8rem 0.8rem;
 }
 .restaurants--block a {
@@ -653,7 +644,8 @@ nav p {
   display: flex;
 }
 .restaurants--block--texte h3 {
-  font-family: Roboto-Medium;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 .restaurants--block--texte div {
   width: 50%;
@@ -692,7 +684,8 @@ nav p {
   border: none;
   background: linear-gradient(350deg, #9356dc 10%, #ff79da 100%);
   box-shadow: 2px 10px 15px -8px rgba(87, 87, 87, 0.41);
-  font-family: Roboto-Regular;
+  font-family: "Roboto";
+  font-weight: 400;
   transition: box-shadow 0.3s;
 }
 
@@ -705,11 +698,13 @@ nav p {
 
 h2 {
   font-size: 1.7rem;
-  font-family: Roboto-Medium;
+  font-family: "Roboto";
+  font-weight: 500;
 }
 
 h3 {
-  font-family: Roboto-Thin;
+  font-family: "Roboto";
+  font-weight: 100;
 }
 
 .restaurant-main {
@@ -795,7 +790,7 @@ h3 {
 }
 
 .font-restau {
-  font-family: Shrikhand;
+  font-family: "Shrikhand";
   font-size: 2.2rem;
 }
 
@@ -807,7 +802,8 @@ h3 {
   width: 10%;
 }
 .card h4 {
-  font-family: Roboto-Medium;
+  font-family: "Roboto";
+  font-weight: 500;
   margin: 1rem 0rem 0rem 1rem;
   overflow: hidden;
   white-space: nowrap;
@@ -815,7 +811,8 @@ h3 {
 }
 .card p {
   margin: 0rem 0rem 0.5rem 1rem;
-  font-family: Roboto-Thin;
+  font-family: "Roboto";
+  font-weight: 100;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -847,7 +844,8 @@ h3 {
 .card--main--animation--txt {
   display: flex;
   align-items: flex-end;
-  font-family: Roboto-Medium;
+  font-family: "Roboto";
+  font-weight: 500;
   margin: 0rem -2.5rem 0.5rem 1rem;
   transition: margin-right 0.5s;
   transform: translate(0%, 0%);
@@ -947,7 +945,8 @@ h3 {
 footer {
   background-color: #363636;
   color: white;
-  font-family: Roboto-Thin;
+  font-family: "Roboto";
+  font-weight: 100;
   padding-bottom: 1.5rem;
 }
 footer svg {
