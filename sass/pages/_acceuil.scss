@@ -238,9 +238,29 @@ nav {
     @include card-restaurants-une;
     @include tablette-only {
         width: 100%;
+        .media--txt {
+            width: 80%;
+  
+        }
+
+        .media--heart {
+            width: 20%;
+  
+        }
     }
     @include desktop-only {
         width: 100%;
+    }
+    @media (max-width : 400px) {
+        .media--txt {
+            width: 80%;
+  
+        }
+
+        .media--heart {
+            width: 20%;
+  
+        }
     }
 }
 
@@ -249,3 +269,4 @@ nav {
         display: flex;
     };
 }
+
