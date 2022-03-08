@@ -5,14 +5,14 @@
     left: -24px;
     transform: scale(0.6);
     transform-origin: 50%;
-    transition: opacity 0.5s, transform 0.4s;
+    transition: opacity 0.8s ease-in-out, transform 0.5s ease-out;
 }
 
 .color-svg:hover{   
     cursor: pointer;   
     opacity: 1;   
-    transform: scale(1);
-    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(1.1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
   
 }
 
@@ -25,13 +25,13 @@
     top: -0.5px;
     transform: scale(0.6);
     transform-origin: 50%;
-    transition: opacity 0.5s, transform 0.4s;
+    transition: opacity 0.5s ease-in-out, transform 0.4s ease-out;
 }
 
 .color-svg-1:hover {
     cursor: pointer;   
     opacity: 1;   
-    transform: scale(1);
-    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(1.1);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
 }
 

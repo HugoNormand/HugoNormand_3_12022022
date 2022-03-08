@@ -137,7 +137,11 @@ nav {
          font-size:  $font-size-titre;
          margin-bottom: 0px;
          margin-top: 40px;
-         @include police-medium
+         @include police-medium;
+         @media (max-width: 471px) {
+             width: 80%;
+             font-size: 1.6rem;
+         }
      }
      p {
          display: block;
@@ -146,6 +150,10 @@ nav {
          text-align: center;
          margin-bottom: 30px;
          @include police-thin;
+         @media (max-width: 471px) {
+            width: 100%;
+            font-size: 1.2rem;
+        }
      }
 
 } 
